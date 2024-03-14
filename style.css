@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+#menu-icon, #close-icon{
+    font-size: 28px;
+    color: black;
+    display: none;
+}
+button{
+    padding: 4px 16px;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+}
+button:hover{
+    background-color: rgb(134, 227, 255);
+    transition: 0.8s;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    backdrop-filter: blur(10px);
+}
+.logo img{
+    width: 160px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+ul{
+    display: flex;
+}
+ul li{
+    list-style-type: none;
+    margin: 0px 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+ul li a:hover{
+    background-color: rgb(134, 227, 255);
+    transition: 0.8s;
+}
+
+.hero-section{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('./main-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+}
+.content1{
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    margin: 0px 20%;
+    color: white;
+    text-align: center;
+}
+.content1 h2{
+    font-size: 24px;
+}
+.content1 p{
+    font-size: 20px;
+}
+
+@media (max-width:710px) {
+    #menu{
+        position: absolute;
+        top: 86px;
+        background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+        width: 100%;
+        left: 100%;
+        height: 60vh;
+       transition: 0.8s;
+    }
+    #menu-icon{
+        display: block;
+        color: white;
+        margin: 0px 10px;
+    }
+    #close-icon{
+        display: none;
+        color: white;
+        margin: 0px 10px;
+    }
+    ul {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    ul li{
+        margin: 16px 0px;
+    }
+    ul li a{
+        border: 1px solid white;
+    }
+    .content1 h2{
+        font-size: 20px;
+    }
+    .content1 p{
+        font-size: 16px;
+    }
+}
